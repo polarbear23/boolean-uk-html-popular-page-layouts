@@ -1,0 +1,74 @@
+
+body{
+
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+
+
+.maingrid{
+
+    display: grid;
+    grid-template: 
+    "servers channels main"/
+     0.1fr    0.3fr     1fr;
+    background-color: #2196f3;
+}
+
+
+
+.servers-col{
+    background-color: rgba(255, 255, 255, 0.8);
+
+    grid-area: servers;
+}
+
+.channels-col{
+    background-color: rgba(255, 0, 255, 0.8);
+
+    grid-area: channels;
+}
+
+.main-col{
+    display: grid;
+
+    grid-template: 
+    "channelName search" 0.1fr
+    "mainchat    mainchat" 0.8fr
+    "message   message"   0.1fr/
+    1fr           0.3fr;
+
+    grid-area: main;
+    background-color: rgba(255, 0, 0, 0.8);
+
+}
+
+.channel-name {
+    background-color: rgba(200, 255, 180, 0.8);
+    grid-area: channelName;
+    
+}
+
+.main-chat {
+    
+    background: lightgreen;
+    padding: 8px;
+    grid-area: mainchat;
+    
+}
+.search-bar{
+
+    background: goldenrod;
+    padding: 8px;
+    grid-area: search;
+
+}
+.message-bar {
+    
+    background: blue;
+    padding: 8px;
+    grid-area: message;
+    
+}
